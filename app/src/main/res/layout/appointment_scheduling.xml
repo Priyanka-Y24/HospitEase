@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgapps"
+            android:padding="40dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="16dp"
+                android:onClick="logoutAndNavigateToMainActivity"
+                android:text="Logout" />
+            <TextView
+                android:layout_width="316dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="New Appointment"
+                android:layout_below="@id/btnLogout"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Patient Full Name -->
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:minHeight="48dp" />
+
+            <!-- Gender -->
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+            </RadioGroup>
+
+            <!-- Age -->
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <!-- Appointment Date -->
+            <EditText
+                android:id="@+id/editTextAppointmentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Appointment Date"
+                android:inputType="none"
+                android:focusable="false"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date" />
+
+            <!-- Appointment Time -->
+            <EditText
+                android:id="@+id/editTextAppointmentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Appointment Time"
+                android:inputType="time"
+                android:minHeight="48dp" />
+
+            <!-- Time Picker Button -->
+            <Button
+                android:id="@+id/timePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Time" />
+
+            <!-- Doctor Spinner -->
+            <Spinner
+                android:id="@+id/doctorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:prompt="@string/choose_doctor" />
+
+            <!-- Disease -->
+            <EditText
+                android:id="@+id/editTextDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Disease"
+                android:minHeight="48dp" />
+
+            <!-- Full Address -->
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Address"
+                android:minHeight="48dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="logoutAndNavigateToMainActivity"
+            android:text="Logout" />
+
+        <!-- Display appointment details -->
+        <TextView
+            android:id="@+id/appointmentDetailsTextView"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/btnLogout"
+            android:text="Appointment Details:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appointmentDetailsContentTextView"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointmentDetailsTextView"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Assessment and Plan -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/assessmentEditText"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointmentDetailsContentTextView"
+            android:layout_marginTop="16dp"
+            android:hint="Assessment"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/planEditText"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assessmentEditText"
+            android:layout_marginTop="8dp"
+            android:hint="Plan"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp" />
+
+        <!-- Save button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/planEditText"
+            android:layout_marginTop="16dp"
+            android:text="Save" />
+
+        <!-- Print button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/printButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton"
+            android:layout_marginTop="16dp"
+            android:text="Print" />
+    </RelativeLayout>
+</ScrollView>

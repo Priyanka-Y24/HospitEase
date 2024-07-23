@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HMS"
+
+        tools:targetApi="31" >
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true"
+            android:label="@string/title_activity_loading"
+            android:theme="@style/Theme.HMS" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".admin.AdminLoginActivity" />
+        <activity android:name=".admin.AdminDashboardActivity" />
+        <activity android:name=".admin.listAdminAdminActivity" />
+        <activity android:name=".admin.listDoctAdminActivity" />
+        <activity android:name=".admin.listRecepAdminActivity" />
+        <activity android:name=".admin.listAccAdminActivity" />
+        <activity android:name=".admin.Edit_accinfo" />
+        <activity android:name=".admin.Edit_admininfo" />
+        <activity android:name=".admin.Edit_doctinfo" />
+        <activity android:name=".admin.Edit_recepinfo" />
+        <activity android:name=".admin.AdminListAdapter" />
+        <activity android:name=".admin.AddAdminInfoActivity" />
+        <activity android:name=".admin.DoctorListAdapter" />
+        <activity android:name=".admin.AddDoctorInfoActivity" />
+        <activity android:name=".admin.RecepListAdapter" />
+        <activity android:name=".admin.AddReceptionInfoActivity" />
+        <activity android:name=".admin.AccListAdapter" />
+        <activity android:name=".admin.AddAccInfoActivity" />
+        <activity android:name=".reception.AppointmentSchedulingActivity" />
+        <activity android:name=".reception.AppointmentsAdapter" />
+        <activity android:name=".reception.RegisteredPatientListActivity" />
+        <activity android:name=".reception.PatientRegActivity" />
+        <activity android:name=".reception.ViewAppointmentsActivity" />
+        <activity android:name=".reception.ReceptionLoginActivity" />
+        <activity android:name=".reception.ReceptionDashboardActivity" />
+        <activity android:name=".doctor.DoctorLoginActivity" />
+        <activity android:name=".doctor.AddDiagnosis" />
+        <activity android:name=".doctor.CheckAppointmentActivity" />
+        <activity android:name=".doctor.DoctorDashboardActivity" />
+        <activity android:name=".doctor.DoctorProfileActivity" />
+        <activity android:name=".doctor.EditDoctorProfileActivity" />
+        <activity android:name=".doctor.MyPrintDocumentAdapter" />
+        <activity android:name=".doctor.PatientlistDiagnosis" />
+        <activity android:name=".billing.AccountLoginActivity" />
+        <activity android:name=".billing.AccountDashboardActivity" />
+        <activity android:name=".billing.BillActivity" />
+        <activity android:name=".billing.PrepareBill" />
+        <activity android:name=".billing.ViewBill" />
+        <activity android:name=".billing.MyPrintDocumentAdapter" />
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"
+        tools:ignore="ManifestOrder" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ManifestOrder,ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+</manifest>

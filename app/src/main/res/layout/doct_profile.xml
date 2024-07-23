@@ -1,0 +1,76 @@
+<!-- doctor_profile.xml -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="logoutAndNavigateToMainActivity"
+            />
+
+        <ImageView
+            android:id="@+id/profilePhotoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:src="@drawable/dpp"
+            android:contentDescription="Profile Photo"/>
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            style="@style/ProfileTextView"
+            android:text="Username: JohnDoe" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/ProfileTextView"
+            android:text="Name: Dr. John Doe" />
+
+        <TextView
+            android:id="@+id/educationTextView"
+            style="@style/ProfileTextView"
+            android:text="Education: MD, PhD" />
+
+        <TextView
+            android:id="@+id/specializationTextView"
+            style="@style/ProfileTextView"
+            android:text="Specialization: Cardiology" />
+
+        <TextView
+            android:id="@+id/contactInformationTextView"
+            style="@style/ProfileTextView"
+            android:text="Contact Information: +123 456 789" />
+
+        <TextView
+            android:id="@+id/experienceTextView"
+            style="@style/ProfileTextView"
+            android:text="Experience: 10 years" />
+
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:text="Edit Profile"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".billing.ViewBill">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="16dp"
+        android:onClick="logoutAndNavigateToMainActivity"
+        android:text="Logout" />
+
+    <Spinner
+        android:id="@+id/spinnerPatientNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:minHeight="48dp"
+        android:prompt="@string/select_patient_prompt" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerPatientNames"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+    <TextView
+        android:id="@+id/textViewSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePicker"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Selected Date: "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSelectedDate"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="150dp"
+        android:text="View Details" />
+
+
+
+</RelativeLayout>
+
+</ScrollView>

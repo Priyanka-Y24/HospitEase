@@ -1,0 +1,114 @@
+<!-- list_item_bill.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/billidTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Id:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Second TextView to the right of the first one -->
+    <TextView
+        android:id="@+id/billidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/billidTextView1"
+        android:layout_marginStart="8dp"
+        android:text="Bill Id:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/patientNameTextView1"
+        android:layout_below="@id/billidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/patientNameTextView"
+        android:layout_below="@id/billidTextView"
+        android:layout_toRightOf="@id/patientNameTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/doctorVisitedTextView1"
+        android:layout_below="@id/patientNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Visited:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/doctorVisitedTextView"
+        android:layout_below="@id/patientNameTextView"
+        android:layout_toRightOf="@id/doctorVisitedTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Visited:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/totalAmountTextView1"
+        android:layout_below="@id/doctorVisitedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_below="@id/doctorVisitedTextView"
+        android:layout_toRightOf="@id/doctorVisitedTextView1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/paymentMethodTextView1"
+        android:layout_below="@id/totalAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_below="@id/totalAmountTextView"
+        android:layout_toRightOf="@id/paymentMethodTextView1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/visitDateTextView1"
+        android:layout_below="@id/paymentMethodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit Date:"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/visitDateTextView"
+        android:layout_below="@id/paymentMethodTextView"
+        android:layout_toRightOf="@id/visitDateTextView1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit Date:"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/printButton"
+        android:layout_below="@id/visitDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onPrintButtonClick"
+        android:text="Print"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+</RelativeLayout>

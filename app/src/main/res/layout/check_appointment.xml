@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.CheckAppointmentActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="logoutAndNavigateToMainActivity"
+        android:text="Logout" />
+
+    <ListView
+        android:id="@+id/listViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnLogout"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/darker_gray"
+        android:background="#FFF" />
+
+</RelativeLayout>
